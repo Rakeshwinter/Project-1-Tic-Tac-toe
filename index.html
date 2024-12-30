@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="flex-box">
+    
+    <div class="container">
+        <div class="score-board flex-box">
+            <h1 class="flex-box">Tic Tac Toe</h1>
+            <div class="inner-box flex-box">
+                <div class="sb-xshadow flex-box">
+                    <div class="x-scoreboard">
+                        <p>X</p> 
+                        <p class="x-score">-</p>
+                     </div>
+                </div>
+                <div class="sb-oshadow flex-box">
+                    <div class="o-scoreboard" >
+                        <p>O</p> 
+                        <p class="o-score">-</p>
+                     </div>
+                </div>
+
+            </div>
+
+        </div>
+        <!-- dig-transition means diagonal transtion -->
+        <div class="diag-transition">
+            <div class="game-box">
+                <div class="single-box" id="aa">
+                    <div class="x-item"></div>
+                    <div class="o-item"></div>
+                    <div  class="line aa"></div>
+                </div>
+                <div class="single-box" id="ab">
+                    <div class="x-item"></div>
+                    <div class="o-item"></div>
+                    <div  class="line ab"></div>
+                </div>
+                <div class="single-box" id="ac">
+                    <div class="x-item"></div>
+                    <div class="o-item"></div>
+                    <div  class="line ac"></div>
+                </div>
+                <div class="single-box" id="ba">
+                    <div class="x-item"></div>
+                    <div class="o-item"></div>
+                    <div  class="line ba"></div>
+                </div>
+                <div class="single-box" id="bb">
+                    <div class="x-item"></div>
+                    <div class="o-item"></div>
+                </div>
+                <div class="single-box" id="bc">
+                    <div class="x-item"></div>
+                    <div class="o-item"></div>
+                </div>
+                <div class="single-box" id="ca">
+                    <div class="x-item"></div>
+                    <div class="o-item"></div>
+                    <div  class="line ca"></div>
+                </div>
+                <div class="single-box" id="cb">
+                    <div class="x-item"></div>
+                    <div class="o-item"></div>
+                </div>
+                <div class="single-box" id="cc">
+                    <div class="x-item"></div>
+                    <div class="o-item"></div>
+                </div>
+                
+            </div>
+            <div class="x-winner">
+                <div class="x-object"></div>
+                <p class="winner">Winner!</p>
+            </div>
+     
+            <div class="o-winner">
+                <div class="o-object"></div>
+                <p class="winner">Winner!</p>
+            </div>
+            <div class="draw">
+                <div class="draw-item">
+                    <div class="x-item xo-draw"></div>
+                    <div class="o-item xo-draw"></div>
+                </div>
+                <p class="draw-text">Draw!</p>
+            </div>
+        </div>
+        <div class="footer flex-box">
+            <p class="footer-para">Click to start the next game / reload to play again!</p>
+        </div>
+    </div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.7.1.slim.js" integrity="sha256-UgvvN8vBkgO0luPSUl2s8TIlOSYRoGFAX4jlCIm9Adc=" crossorigin="anonymous"></script>
+
+    <script src="index.js"></script>
+
+
+</body>
+</html>
