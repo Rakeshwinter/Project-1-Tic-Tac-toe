@@ -392,6 +392,21 @@ h1{
     opacity: 1;
 }
 
+
+footer{
+    position: absolute;
+    color: #ffffff;
+    font-size: 15px;
+    font-family:'Courier New', Courier, monospace;
+    bottom: 0;
+    width: 100%;
+}
+footer p{
+    text-align: end;
+    margin: 0;
+    padding: 10px;
+}
+
 @media(max-width: 750px){
     :root{
         --size:60;
